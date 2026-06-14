@@ -1,14 +1,14 @@
 results = [
-    "Test_1 PASSED",
-    "Test_2 FAILED",
-    "Test_3 PASSED",
-    "Test_4 PASSED",
-    "Test_5 FAILED",
-    "Test_6 PASSED",
-    "Test_7 PASSED",
-    "Test_8 FAILED",
-    "Test_9 PASSED",
-    "Test_10 PASSED"
+    "Test_1 PASSED Bluetooth",
+    "Test_2 FAILED Bluetooth",
+    "Test_3 PASSED Audio",
+    "Test_4 PASSED Audio",
+    "Test_5 FAILED Audio",
+    "Test_6 PASSED Firmware",
+    "Test_7 PASSED Firmware",
+    "Test_8 FAILED Firmware",
+    "Test_9 PASSED Pairing",
+    "Test_10 PASSED Pairing"
 ]
 
 total = len(results)
@@ -34,3 +34,25 @@ print("FAILED TESTS:")
 for result in results:
     if "FAILED" in result:
         print(result)
+
+
+# Count results by category
+categories = {}
+
+for result in results:
+    parts = result.split()
+    status = parts[1]
+    category = parts[2]
+    
+    if category not in categories:
+        categories[category] = {"passed": 0, "failed": 0}
+    
+    if status == "PASSED":
+        categories[category]["passed"] += 1
+    else:
+        categories[category]["failed"] += 1
+
+print()
+print("RESULTS BY CATEGORY:")
+for category, counts in categories.items():
+    print(f"{category:<20}{counts['passed']} passed  {counts['failed']} failed")
