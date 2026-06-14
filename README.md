@@ -1,6 +1,3 @@
-# QA-test-results-dashboard
-Python script that analyzes QA test results, calculates pass rate, and identifies failed tests
-
 # QA Test Results Dashboard
 A Python script that analyzes QA test results, calculates pass 
 rate, and identifies all failed tests.
