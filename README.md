@@ -14,6 +14,7 @@ rate, and identifies all failed tests.
 - Lists all failed tests
 
 ## Sample Output
+```
 ===== TEST RESULTS DASHBOARD =====
 Total Tests:        10
 Passed:             7
@@ -25,6 +26,6 @@ FAILED TESTS:
 Test_2 FAILED
 Test_5 FAILED
 Test_8 FAILED
-
+```
 ## Skills used
 Python • Lists • Loops • f-strings • Basic math
