@@ -35,9 +35,15 @@ Pass Rate:          70.0%
 ==================================
 
 FAILED TESTS:
-Test_2 FAILED
-Test_5 FAILED
-Test_8 FAILED
+Test_2 FAILED Bluetooth
+Test_5 FAILED Audio
+Test_8 FAILED Firmware
+
+RESULTS BY CATEGORY:
+Bluetooth           1 passed  1 failed
+Audio               2 passed  1 failed
+Firmware            2 passed  1 failed
+Pairing             2 passed  0 failed
 ```
 ## Skills used
 Python • Lists • Loops • f-strings • Basic math
