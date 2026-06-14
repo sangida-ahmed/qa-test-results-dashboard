@@ -2,15 +2,14 @@
 Python script that analyzes QA test results, calculates pass rate, and identifies failed tests
 
 # QA Test Results Dashboard
-
 A Python script that analyzes QA test results, calculates pass 
 rate, and identifies all failed tests.
 
 ## Why I built this
 As I transition into QA Engineering, one of the first things 
 I wanted to understand is how engineers track quality across 
-a test suite. Every time a product ships — whether it's a 
-Bluetooth headphone, an iOS app, or a wireless device — someone 
+a test suite. Every time a product ships whether it's a 
+Bluetooth headphone, an iOS app, or a wireless device, someone 
 needs to know: how many tests ran, how many passed, and exactly 
 which ones failed.
 
